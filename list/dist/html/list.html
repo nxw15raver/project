@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>列表</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../css/all.css" rel="stylesheet">
+<script type="text/javascript" src="../lib/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../lib/move2.js"></script>
+
+</head>
+<body>
+    <header>
+    	<div class="w">
+    		<ul class="l header_top_left">
+    			<li class="l"><span>10231099</span>位会员的选择</li>
+    			<li class="l"><a href="../../../log in/dist/html/log in.html">登陆</a></li>
+    			<li class="l"><a href="../../../sign in/dist/html/sign in.html" class="bold last">注册</a></li>
+    		</ul>
+			<ul class="r header_top_right">
+				<li class="l first"><a href="">会员俱乐部</a></li>
+				<li class="l"><a href="" class="bold">签到</a></li>
+				<li class="l thr"><a href="">我的账户<span></span></a>
+					<b></b>
+					<ul>
+						<li><a href="">我的订单</a></li>
+						<li><a href="">我的存酒库</a></li>
+						<li><a href="">我的优惠券</a></li>
+						<li><a href="">我的收藏夹</a></li>
+					</ul>
+				</li>
+				<li class="l four"><a href="">手机版<span></span></a>
+					<b></b>
+					<div class="header_hidn_down">
+						<p class="header_hidn_down_p">APP首单<span>满100得100</span></p>
+						<div>
+							<img src="https://img10.yesmyimg.com/newWeb/images/red-code.png" class="l code">
+							<p class="l">下载也买酒客户端</p>
+							<img src="https://img10.yesmyimg.com/newWeb/images/ios.png" class="l">
+							<img src="https://img10.yesmyimg.com/newWeb/images/android.png" class="l ios">
+						</div>
+						<a href="" class="blue">了解更多客户端优惠!</a>
+					</div>
+				</li>
+				<li class="l"><a href="" class="bold">设置勿扰</a></li>
+			</ul>
+    	</div>
+    	<div class="header_down">
+    		<div class="w">
+				<div class="logo l">
+					<h1><a href="../../../index/dist/html/index.html">
+						<img src="https://css.yesmyimg.com/web/20160613/newWeb/css/v3/5135/images/logo2.png">
+					</a></h1>
+				</div>
+				<div class="header_down_code l">
+					<img src="https://img14.yesmyimg.com/images/event/2015/11/logo.png">
+				</div>
+				<div class="search l">
+					<form>
+						<input type="text" name="q" value="输入您要查找的商品名称" id="search" class="l">
+						<input type="submit" name="b" value="搜索" id="btn" class="l">
+					</form>
+					<p class="search_p">
+						<a href="">2017薄若莱新酒</a>
+						<a href="">黑啤清仓</a>
+						<a href="">特色陈年老酒</a>
+					</p>
+				</div>
+				<div class="shopcar l" id="shopcar">
+					<a href="../../../shop car/dist/html/shopcar.html" class="car">购物车</a>
+					<span id="carcount">0</span>
+					<div class="shopcar_list">
+						<ul></ul>
+						<p class="shopcar_list_p1 l">共<span>0</span>件商品<br>
+						总计：￥<span>0.0</span></p>
+						<a href="" class="seecar">查看购物车</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </header>
+    <nav>
+    	<div class="w">
+    		<ul class="nav_index">
+    			<li class="l"><a href="" class="index_mainBtn"><span></span>选酒中心</a><b></b>
+					<div class="index_list">
+						<div id="list_one">
+							<p>葡萄酒<span></span></p>
+							<ul class="nav_list">
+								<li class="l"><a href="">法国</a></li>
+								<li class="l"><a href="">西班牙</a></li>
+								<li class="l"><a href="">意大利</a></li>
+								<li class="l"><a href="">智利</a></li>
+								<li class="l"><a href="">干红</a></li>
+								<li class="l"><a href="">桃红</a></li>
+								<li class="l"><a href="">甜白</a></li>
+								<li class="l"><a href="">起泡</a></li>
+								<li class="l"><a href="">香槟</a></li>
+								<li class="l"><a href="">加强葡萄酒</a></li>
+								<li class="l"><a href="">列级名庄</a></li>
+								<li class="l"><a href="">中级庄</a></li>
+							</ul>						
+						</div>
+						<div id="list_two">
+							<p>一键选酒<span class="two_hot"></span><span></span></p>
+							<ul class="nav_list">
+								<li class="l"><a href="">礼盒</a></li>
+								<li class="l"><a href="">餐酒精选</a></li>
+								<li class="l"><a href="">礼盒套装</a></li>
+								<li class="l"><a href="">权威高分酒</a></li>
+								<li class="l"><a href="">聚会婚庆整箱</a></li>
+								<li class="l"><a href="">精品闪购</a></li>
+								<li class="l"><a href="">海淘</a></li>
+								<li class="l"><a href="">陈酿老酒</a></li>
+							</ul>
+						</div>
+						<div id="list_thr">
+							<p>洋酒烈酒</span><span></span></p>
+							<ul class="nav_list">
+								<li class="l"><a href="">轩尼诗</a></li>
+								<li class="l"><a href="">威士忌</a></li>
+								<li class="l"><a href="">鸡尾酒</a></li>
+								<li class="l"><a href="">百利甜</a></li>
+								<li class="l"><a href="">干邑</a></li>
+								<li class="l"><a href="">白兰地</a></li>
+								<li class="l"><a href="">朗姆酒</a></li>
+								<li class="l"><a href="">伏加特</a></li>
+							</ul>
+						</div>
+						<div id="list_four">
+							<p>中国白酒</span><span></span></p>
+							<ul class="nav_list">
+								<li class="l"><a href="">茅台</a></li>
+								<li class="l"><a href="">五粮液</a></li>
+								<li class="l"><a href="">红花郎</a></li>
+								<li class="l"><a href="">洋河</a></li>
+							</ul>
+						</div>
+						<div id="list_five">
+							<p>酒具周边</span><span></span></p>
+							<ul class="nav_list">
+								<li class="l"><a href="">酒杯</a></li>
+								<li class="l"><a href="">酒柜</a></li>
+								<li class="l"><a href="">酒刀</a></li>
+								<li class="l"><a href="">醒酒器</a></li>
+								<li class="l"><a href="">礼盒</a></li>
+								<li class="l"><a href="">其他酒具</a></li>
+							</ul>
+						</div>
+						<div id="list_six">
+							<p>啤酒 黄酒 日韩酒</span><span></span></p>
+							<ul class="nav_list">
+								<li class="l"><a href="">进口啤酒</a></li>
+								<li class="l"><a href="">精酿黄酒</a></li>
+								<li class="l"><a href="">钜惠抢购</a></li>
+								<li class="l"><a href="">绍兴黄酒</a></li>
+								<li class="l"><a href="">清酒</a></li>
+								<li class="l"><a href="">梅酒</a></li>
+								<li class="l"><a href="">烧酒</a></li>
+							</ul>
+						</div>
+					</div>
+    			</li>
+    			<li class="l"><a href="">首页</a></li>
+    			<li class="l"><a href="">超值抢购</a></li>
+    			<li class="l"><a href="">精品闪购</a></li>
+    			<li class="l"><a href="">名庄特卖</a></li>
+    			<li class="l"><a href="">非常大牌</a></li>
+    			<li class="l"><a href="">香港免税</a></li>
+    			<li class="l"><a href="">清仓特卖<span></span></a></li>
+    			<li class="l"><a href="">老酒馆<span></span></a></li>
+    			<li class="l"><a href="">全球海淘</a></li>
+    			<li class="l"><a href="">也买快送<span></span></a></li>
+    		</ul>
+    	</div>
+    </nav>
+    <div class="daohang">
+    	<div class="w">
+    		<a href="">首页</a>
+    		<span>&gt;</span>
+    		<a href="">选酒中心</a>
+    	</div>
+    </div>
+    <div class="list_main">
+    	<div class="w">
+    		<div class="main_left">
+    			<div class="fenlei">
+    				<h4>所有分类</h4>
+		    		<div>
+		    			<div>
+		    				<span class="fenlei_on"></span>
+		    				<a href="">葡萄酒</a>
+		    			</div>
+		    			<ul class="fenlei_onlist">
+		    				<li><a href="">红葡萄酒</a></li>
+		    				<li><a href="">白葡萄酒</a></li>
+		    				<li><a href="">桃红葡萄酒</a></li>
+		    				<li><a href="">起泡酒</a></li>
+		    				<li><a href="">加强葡萄酒</a></li>
+		    				<li><a href="">香槟</a></li>
+		    				<li><a href="">冰酒</a></li>
+		    			</ul>
+	    			</div>
+	    			<div>
+	    				<div>
+	    					<span class=""></span>
+		    				<a href="">洋酒</a>
+	    				</div>
+		    			<ul class="">
+		    				<li><a href="">米酒</a></li>
+		    				<li><a href="">果味酒</a></li>
+		    				<li><a href="">威士忌</a></li>
+		    				<li><a href="">伏特加</a></li>
+		    				<li><a href="">白兰地</a></li>
+		    				<li><a href="">力娇酒</a></li>
+		    				<li><a href="">干邑</a></li>
+		    				<li><a href="">雅文邑</a></li>
+		    				<li><a href="">纯麦芽威士忌</a></li>
+		    				<li><a href="">金酒</a></li>
+		    				<li><a href="">朗姆酒</a></li>
+		    				<li><a href="">墨西哥烈酒</a></li>
+		    				<li><a href="">开胃酒</a></li>
+		    				<li><a href="">清酒</a></li>
+		    				<li><a href="">烧酒</a></li>
+		    			</ul>
+	    			</div>
+	    			<div>
+	    				<div>
+	    					<span class=""></span>
+		    				<a href="">白酒</a>
+	    				</div>
+		    			<ul class="">
+		    				<li><a href="">馥郁香型</a></li>
+		    				<li><a href="">浓香型</a></li>
+		    				<li><a href="">酱香型</a></li>
+		    				<li><a href="">清香型</a></li>
+		    				<li><a href="">凤香型</a></li>
+		    				<li><a href="">绵柔型</a></li>
+		    				<li><a href="">米香型</a></li>
+		    				<li><a href="">兼香型</a></li>
+		    				<li><a href="">其他香型白酒</a></li>
+		    			</ul>
+	    			</div>
+	    			<div>
+	    				<div>
+	    					<span class=""></span>
+		    				<a href="">老酒</a>
+	    				</div>
+		    			<ul class="">
+		    				<li><a href="">馥郁香型</a></li>
+		    				<li><a href="">浓香型</a></li>
+		    				<li><a href="">酱香型</a></li>
+		    				<li><a href="">清香型</a></li>
+		    				<li><a href="">凤香型</a></li>
+		    				<li><a href="">绵柔型</a></li>
+		    				<li><a href="">米香型</a></li>
+		    				<li><a href="">兼香型</a></li>
+		    				<li><a href="">其他香型白酒</a></li>
+		    			</ul>
+	    			</div>
+	    			<div>
+	    				<div>
+	    					<span class=""></span>
+		    				<a href="">啤酒</a>
+	    				</div>
+		    			<ul class="">
+		    				<li><a href="">红啤酒</a></li>
+		    				<li><a href="">黄啤酒</a></li>
+		    				<li><a href="">白啤酒</a></li>
+		    				<li><a href="">黑啤酒</a></li>
+		    			</ul>
+	    			</div>
+	    			<div>
+	    				<div>
+	    					<span class=""></span>
+		    				<a href="">酒具</a>
+	    				</div>
+		    			<ul class="">
+		    				<li><a href="">壶</a></li>
+		    				<li><a href="">酒柜</a></li>
+		    				<li><a href="">礼盒</a></li>
+		    				<li><a href="">酒杯</a></li>
+		    				<li><a href="">醒酒器</a></li>
+		    				<li><a href="">酒鼻子</a></li>
+		    				<li><a href="">酒刀</a></li>
+		    				<li><a href="">酒架</a></li>
+		    				<li><a href="">其他酒具</a></li>
+		    				<li><a href="">其他</a></li>
+		    			</ul>
+	    			</div>
+	    			<div>
+	    				<div>
+	    					<span class=""></span>
+		    				<a href="">食品</a>
+	    				</div>
+		    			<ul class="">
+		    				<li><a href=""> 茶叶/冲调饮品/牛奶</a></li>
+		    				<li><a href=""> 零食/坚果/特产</a></li>
+		    				<li><a href=""> 粮油米面/南北干货/调味品</a></li>
+		    				<li><a href=""> 进口食品</a></li>
+		    				<li><a href=""> 水产肉类/新鲜蔬果/熟食</a></li>
+		    				<li><a href=""> 保健食品</a></li>
+		    				<li><a href="">食品提货券</a></li>
+		    			</ul>
+	    			</div>
+	    			<div>
+	    				<div>
+	    					<span class=""></span>
+		    				<a href="">黄酒</a>
+	    				</div>
+		    			<ul class="">
+		    				<li><a href="">大米黄酒</a></li>
+		    				<li><a href="">糯米黄酒</a></li>
+		    				<li><a href="">红曲黄酒</a></li>
+		    				<li><a href="">忝米黄酒</a></li>
+		    			</ul>
+	    			</div>
+    			</div>
+    			<div class="xiaoliang">
+    				<h4>一周销量排行</h4>
+    				<ul>
+	    				<li class="item">
+	    					<em>1</em>
+	    					<a href=""><img src="https://img09.yesmyimg.com/5184338/8415919_60x98.JPG"></a>
+	    					<a href="">拉昂城堡干红葡萄酒
+	    					<span>La Bastide Laurent</span></a>
+	    					<span>售出
+	    						<strong>598824</strong></span>
+	    					<span>￥
+	    						<strong>59.0</strong></span>
+	    				</li>
+	    				<li class="item">
+	    					<em>2</em>
+	    					<a href=""><img src="https://img09.yesmyimg.com/5184338/8415919_60x98.JPG"></a>
+	    					<a href="">拉昂城堡干红葡萄酒
+	    					<span>La Bastide Laurent</span></a>
+	    					<span>售出
+	    						<strong>598824</strong></span>
+	    					<span>￥
+	    						<strong>59.0</strong></span>
+	    				</li>
+	    				<li class="item">
+	    					<em>3</em>
+	    					<a href=""><img src="https://img09.yesmyimg.com/5184338/8415919_60x98.JPG"></a>
+	    					<a href="">拉昂城堡干红葡萄酒
+	    					<span>La Bastide Laurent</span></a>
+	    					<span>售出
+	    						<strong>598824</strong></span>
+	    					<span>￥
+	    						<strong>59.0</strong></span>
+	    				</li>
+	    				<li class="item">
+	    					<em>4</em>
+	    					<a href=""><img src="https://img09.yesmyimg.com/5184338/8415919_60x98.JPG"></a>
+	    					<a href="">拉昂城堡干红葡萄酒
+	    					<span>La Bastide Laurent</span></a>
+	    					<span>售出
+	    						<strong>598824</strong></span>
+	    					<span>￥
+	    						<strong>59.0</strong></span>
+	    				</li>
+	    				<li class="item">
+	    					<em>5</em>
+	    					<a href=""><img src="https://img09.yesmyimg.com/5184338/8415919_60x98.JPG"></a>
+	    					<a href="">拉昂城堡干红葡萄酒
+	    					<span>La Bastide Laurent</span></a>
+	    					<span>售出
+	    						<strong>598824</strong></span>
+	    					<span>￥
+	    						<strong>59.0</strong></span>
+	    				</li>
+	    				<li class="item">
+	    					<em>6</em>
+	    					<a href=""><img src="https://img09.yesmyimg.com/5184338/8415919_60x98.JPG"></a>
+	    					<a href="">拉昂城堡干红葡萄酒
+	    					<span>La Bastide Laurent</span></a>
+	    					<span>售出
+	    						<strong>598824</strong></span>
+	    					<span>￥
+	    						<strong>59.0</strong></span>
+	    				</li>
+	    				<li class="item">
+	    					<em>7</em>
+	    					<a href=""><img src="https://img09.yesmyimg.com/5184338/8415919_60x98.JPG"></a>
+	    					<a href="">拉昂城堡干红葡萄酒
+	    					<span>La Bastide Laurent</span></a>
+	    					<span>售出
+	    						<strong>598824</strong></span>
+	    					<span>￥
+	    						<strong>59.0</strong></span>
+	    				</li>
+	    				<li class="item">
+	    					<em>8</em>
+	    					<a href=""><img src="https://img09.yesmyimg.com/5184338/8415919_60x98.JPG"></a>
+	    					<a href="">拉昂城堡干红葡萄酒
+	    					<span>La Bastide Laurent</span></a>
+	    					<span>售出
+	    						<strong>598824</strong></span>
+	    					<span>￥
+	    						<strong>59.0</strong></span>
+	    				</li>
+	    				<li class="item">
+	    					<em>9</em>
+	    					<a href=""><img src="https://img09.yesmyimg.com/5184338/8415919_60x98.JPG"></a>
+	    					<a href="">拉昂城堡干红葡萄酒
+	    					<span>La Bastide Laurent</span></a>
+	    					<span>售出
+	    						<strong>598824</strong></span>
+	    					<span>￥
+	    						<strong>59.0</strong></span>
+	    				</li>
+	    				<li class="item">
+	    					<em>10</em>
+	    					<a href=""><img src="https://img09.yesmyimg.com/5184338/8415919_60x98.JPG"></a>
+	    					<a href="">拉昂城堡干红葡萄酒
+	    					<span>La Bastide Laurent</span></a>
+	    					<span>售出
+	    						<strong>598824</strong></span>
+	    					<span>￥
+	    						<strong>59.0</strong></span>
+	    				</li>
+	    			</ul>
+    			</div>
+    			<div class="tuijian">
+    				<h4>为你推荐</h4>
+    				<ul>
+    					<li>
+    						<a href="">
+    							<img src="https://img18.yesmyimg.com/n/225/4/4225/5941745_60x98.png">
+    						</a>
+    						<a>
+    							康纳斯顿梅洛干红葡萄酒（黑标）
+    							<span>CornerStone Merlot Black Label</span>
+    						</a>
+    						<span>￥55.0</span>
+    					</li>
+    					<li>
+    						<a href="">
+    							<img src="https://img18.yesmyimg.com/n/225/4/4225/5941745_60x98.png">
+    						</a>
+    						<a>
+    							康纳斯顿梅洛干红葡萄酒（黑标）
+    							<span>CornerStone Merlot Black Label</span>
+    						</a>
+    						<span>￥55.0</span>
+    					</li>
+    					<li>
+    						<a href="">
+    							<img src="https://img18.yesmyimg.com/n/225/4/4225/5941745_60x98.png">
+    						</a>
+    						<a>
+    							康纳斯顿梅洛干红葡萄酒（黑标）
+    							<span>CornerStone Merlot Black Label</span>
+    						</a>
+    						<span>￥55.0</span>
+    					</li>
+    					<li>
+    						<a href="">
+    							<img src="https://img18.yesmyimg.com/n/225/4/4225/5941745_60x98.png">
+    						</a>
+    						<a>
+    							康纳斯顿梅洛干红葡萄酒（黑标）
+    							<span>CornerStone Merlot Black Label</span>
+    						</a>
+    						<span>￥55.0</span>
+    					</li>
+    					<li>
+    						<a href="">
+    							<img src="https://img18.yesmyimg.com/n/225/4/4225/5941745_60x98.png">
+    						</a>
+    						<a>
+    							康纳斯顿梅洛干红葡萄酒（黑标）
+    							<span>CornerStone Merlot Black Label</span>
+    						</a>
+    						<span>￥55.0</span>
+    					</li>
+    					<li>
+    						<a href="">
+    							<img src="https://img18.yesmyimg.com/n/225/4/4225/5941745_60x98.png">
+    						</a>
+    						<a>
+    							康纳斯顿梅洛干红葡萄酒（黑标）
+    							<span>CornerStone Merlot Black Label</span>
+    						</a>
+    						<span>￥55.0</span>
+    					</li>
+    					<li>
+    						<a href="">
+    							<img src="https://img18.yesmyimg.com/n/225/4/4225/5941745_60x98.png">
+    						</a>
+    						<a>
+    							康纳斯顿梅洛干红葡萄酒（黑标）
+    							<span>CornerStone Merlot Black Label</span>
+    						</a>
+    						<span>￥55.0</span>
+    					</li>
+    					<li>
+    						<a href="">
+    							<img src="https://img18.yesmyimg.com/n/225/4/4225/5941745_60x98.png">
+    						</a>
+    						<a>
+    							康纳斯顿梅洛干红葡萄酒（黑标）
+    							<span>CornerStone Merlot Black Label</span>
+    						</a>
+    						<span>￥55.0</span>
+    					</li>
+    				</ul>
+    			</div>
+	    	</div>
+	    	<div class="main_right">
+	    		<div class="list_top">
+	    			<ul>
+	    				<li>
+	    					<a href=""><img src="https://img18.yesmyimg.com/n/9/231/6231009/0553994_110x180.png"></a>
+	    					<div class="liRight">
+	    						<a href="">神牛干红葡萄酒</a>
+	    						<span>￥
+	    							<strong>55.0</strong>
+	    						</span>
+	    						<a href="">加入购物车</a>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<a href=""><img src="https://img18.yesmyimg.com/n/9/231/6231009/0553994_110x180.png"></a>
+	    					<div class="liRight">
+	    						<a href="">神牛干红葡萄酒</a>
+	    						<span>￥
+	    							<strong>55.0</strong>
+	    						</span>
+	    						<a href="">加入购物车</a>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<a href=""><img src="https://img18.yesmyimg.com/n/9/231/6231009/0553994_110x180.png"></a>
+	    					<div class="liRight">
+	    						<a href="">神牛干红葡萄酒</a>
+	    						<span>￥
+	    							<strong>55.0</strong>
+	    						</span>
+	    						<a href="">加入购物车</a>
+	    					</div>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    		<div class="selection_price">
+	    			<span>价格：</span>
+	    			<a href="" class="price_on">不限</a>
+	    			<a href="">1-99元</a>
+	    			<a href="">100-199元</a>
+	    			<a href="">200-299元</a>
+	    			<a href="">300-399元</a>
+	    			<a href="">400-499元</a>
+	    			<a href="">500-599元</a>
+	    			<input type="text" name="">
+	    			<span>-</span>
+	    			<input type="text" name="">
+	    			<input type="submit" name="" value="确定">
+	    		</div>
+	    		<div class="goods_title">
+	    			<ul>
+	    				<li><a href="" class="title_on">全部</a></li>
+	    				<li><a href="">特惠</a></li>
+	    				<li><a href="">整箱</a></li>
+	    				<li><a href="">组合</a></li>
+	    			</ul>
+	    			<div class="page_min">
+	    				<span>共有<strong>6708</strong>件商品</span>
+	    				<span><strong>1</strong>/<strong>228</strong></span>
+	    				<a href="" class="disabled"></a>
+	    				<a href=""></a>
+	    			</div>
+	    		</div>
+	    		<div class="goods_nav">
+	    			<ul class="l">
+	    				<li class="l nav_on"><a href="">默认</a></li>
+	    				<li class="l"><a href="">销量</a></li>
+	    				<li class="l"><a href="">价格<b></b></a></li>
+	    				<li class="l"><a href="">评论数</a></li>
+	    				<li class="l"><a href="">上架时间</a></li>
+	    			</ul>
+	    			<div class="nav_right r">
+						<span><em></em>也买酒</span>
+	    				<span><em></em>也买商城</span>
+	    				<div class="areaSelection">辽宁
+							<div class="areahidn">
+								<ul>
+									<li>
+										<a>全国</a>
+									</li>
+									<li>
+										<a>北京</a>
+										<a>天津</a>
+										<a>河北</a>
+										<a>山西</a>
+										<a>内蒙古</a>
+									</li>
+									<li>
+										<a>上海</a>
+										<a>江苏</a>
+										<a>浙江</a>
+										<a>山东</a>
+										<a>安徽</a>
+										<a>福建</a>
+									</li>
+									<li>
+										<a>广东</a>
+										<a>广西</a>
+										<a>海南</a>
+									</li>
+									<li>
+										<a>湖北</a>
+										<a>湖南</a>
+										<a>河南</a>
+										<a>江西</a>
+									</li>
+									<li>
+										<a>四川</a>
+										<a>重庆</a>
+										<a>云南</a>
+										<a>贵州</a>
+										<a>西藏</a>
+									</li>
+									<li>
+										<a>陕西</a>
+										<a>甘肃</a>
+										<a>宁夏</a>
+										<a>新疆</a>
+										<a>青海</a>
+									</li>
+									<li>
+										<a class="hidn_on">辽宁</a>
+										<a>吉林</a>
+										<a>黑龙江</a>
+									</li>
+								</ul>
+							</div>
+	    				</div>
+	    				<ul class="pageview">
+	    					<li><a href="" class=" pageview_on">大图</a></li>
+	    					<li><a href="">列表</a></li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    	</div>
+    	</div>
+    </div>
+<script type="text/javascript" src="../js/all.js"></script>
+</body>
+</html>

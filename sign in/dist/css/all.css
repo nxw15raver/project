@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/*================================reset=================================*/
+body, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, ol, dl, dd, dt, figure, figcaption,
+input, form, fieldset, legend {
+  margin: 0px;
+  padding: 0px;
+  border: 0; }
+
+fieldset, img {
+  display: block;
+  border: 0px; }
+
+input {
+  outline: none; }
+
+ul, ol {
+  list-style: none; }
+
+body {
+  font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+  background: #fff; }
+
+a {
+  color: #85726c;
+  text-decoration: none; }
+
+a:hover {
+  color: #c53f4c; }
+
+header, footer, main, nav, section, aside, article, figure, figcaption {
+  display: block; }
+
+/*===============================公共样式============================*/
+.w {
+  width: 1200px;
+  margin: 0 auto; }
+
+.l {
+  float: left; }
+
+.r {
+  float: right; }
+
+header {
+  border-bottom: 2px solid #BC0E31; }
+  header div.w {
+    padding: 20px 0;
+    overflow: hidden; }
+
+div#signMain div.w {
+  padding: 20px 0;
+  overflow: hidden; }
+  div#signMain div.w div.leftBox {
+    overflow: hidden;
+    padding: 20px 10px;
+    width: 378px;
+    border: 1px solid #d2d2ce;
+    background: #f8f8f5;
+    position: relative; }
+    div#signMain div.w div.leftBox h3 {
+      margin: 0 12px 18px 12px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #d2d2ce;
+      text-align: left;
+      font-size: 14px; }
+    div#signMain div.w div.leftBox a.toptitle {
+      position: absolute;
+      top: 36px;
+      left: 157px;
+      color: #06c; }
+    div#signMain div.w div.leftBox form input {
+      padding: 0 5px;
+      width: 270px;
+      height: 38px;
+      color: #666;
+      font-size: 12px;
+      line-height: 38px;
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+      margin-top: 5px; }
+    div#signMain div.w div.leftBox form span {
+      margin-left: 15px;
+      font-size: 14px; }
+    div#signMain div.w div.leftBox form p {
+      display: none;
+      background: transparent url(https://css.yesmyimg.com/web/20160613/newWeb/css/member/images/icon_error.gif) no-repeat scroll 0px 3px;
+      color: red;
+      font-size: 12px;
+      margin-left: 80px;
+      padding-left: 16px; }
+    div#signMain div.w div.leftBox form span:nth-child(5) {
+      padding-right: 13px; }
+    div#signMain div.w div.leftBox form input:nth-child(6) {
+      width: 165px; }
+    div#signMain div.w div.leftBox form a:nth-child(7) {
+      float: right;
+      margin-top: 10px;
+      margin-right: 17px; }
+      div#signMain div.w div.leftBox form a:nth-child(7) img {
+        display: inline-block; }
+    div#signMain div.w div.leftBox form input:nth-child(11) {
+      width: 150px; }
+    div#signMain div.w div.leftBox form a:nth-child(12) {
+      background-color: #f45f03;
+      color: #fff;
+      text-align: center;
+      display: inline-block;
+      width: 103px;
+      height: 40px;
+      line-height: 40px; }
+    div#signMain div.w div.leftBox form span:nth-child(15) {
+      margin-right: 10px; }
+    div#signMain div.w div.leftBox form input:nth-child(23) {
+      width: auto;
+      height: auto;
+      padding: 0;
+      margin: 20px 0px 20px 88px; }
+    div#signMain div.w div.leftBox form button {
+      width: 355px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      border: 0;
+      background: #bb0e30;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      margin-left: 10px; }
+
+footer {
+  border-top: 1px solid #ccc; }
+  footer div.w div.foot-license {
+    margin-top: 10px;
+    padding: 5px 0;
+    color: #999;
+    text-align: center;
+    line-height: 20px; }
+    footer div.w div.foot-license span {
+      background: url(https://css.yesmyimg.com/web/20160613/newWeb/css/v3/5135/images/bg_header2.png) no-repeat;
+      display: inline-block;
+      height: 20px;
+      background-position: 200px -140px; }
+    footer div.w div.foot-license span.sep {
+      font-family: "Arial";
+      margin: 0 5px; }
+    footer div.w div.foot-license span.top100 {
+      padding-left: 22px;
+      background-position: -180px -230px; }
+    footer div.w div.foot-license span.year18 {
+      padding-left: 22px;
+      background-position: -180px -250px; }
+    footer div.w div.foot-license span.shzxw {
+      padding-left: 22px;
+      background-position: -180px -270px; }
+    footer div.w div.foot-license span.shgs {
+      padding-left: 22px;
+      background-position: -180px -290px; }
+  footer div.w div.foot-copyright {
+    color: #999;
+    text-align: center;
+    line-height: 30px; }
+    footer div.w div.foot-copyright::after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    footer div.w div.foot-copyright span.sep {
+      font-family: Arial;
+      margin: 0 5px; }
+    footer div.w div.foot-copyright div.cx {
+      overflow: hidden;
+      margin: 0 auto;
+      width: 356px; }

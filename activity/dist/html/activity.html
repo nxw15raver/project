@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>活动</title>
+	<link href="../css/all.css" rel="stylesheet">
+	<script type="text/javascript" src="../lib/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../lib/move2.js"></script>
+</head>
+<body>
+	<header>
+		<div class="m">
+			<ul class="l header_top_left">
+    			<li class="l"><span>10231099</span>位会员的选择</li>
+    			<li class="l"><a href="../../../log in/dist/html/log in.html">登陆</a></li>
+    			<li class="l"><a href="../../../sign in/dist/html/sign in.html" class="bold last">注册</a></li>
+    		</ul>
+			<ul class="r header_top_right">
+				<li class="l first"><a href="">会员俱乐部</a></li>
+				<li class="l"><a href="" class="bold">签到</a></li>
+				<li class="l thr"><a href="">我的账户<span></span></a>
+					<b></b>
+					<ul>
+						<li><a href="">我的订单</a></li>
+						<li><a href="">我的存酒库</a></li>
+						<li><a href="">我的优惠券</a></li>
+						<li><a href="">我的收藏夹</a></li>
+					</ul>
+				</li>
+				<li class="l four"><a href="">手机版<span></span></a>
+					<b></b>
+					<div class="header_hidn_down">
+						<p class="header_hidn_down_p">APP首单<span>满100得100</span></p>
+						<div>
+							<img src="https://img10.yesmyimg.com/newWeb/images/red-code.png" class="l code">
+							<p class="l">下载也买酒客户端</p>
+							<img src="https://img10.yesmyimg.com/newWeb/images/android.png" class="l">
+							<img src="https://img10.yesmyimg.com/newWeb/images/ios.png" class="l ios">
+						</div>
+						<a href="" class="blue">了解更多客户端优惠!</a>
+					</div>
+				</li>
+				<li class="l"><a href="" class="bold">设置勿扰</a></li>
+			</ul>
+			<div class="header_down">
+    		
+				<div class="logo l">
+					<h1><a href="../../../index/dist/html/index.html">
+						<img src="https://css.yesmyimg.com/20140808/newWeb/css/v3/5135/images/logo.png">
+					</a></h1>
+				</div>
+				<div class="header_down_code l">
+					<img src="https://img14.yesmyimg.com/images/event/2015/11/logo.png">
+				</div>
+				<div class="search l">
+					<form>
+						<input type="text" name="q" value="输入您要查找的商品名称" id="search" class="l">
+						<input type="submit" name="b" value="搜索" id="btn" class="l">
+					</form>
+					<p class="search_p">
+						<a href="">2017薄若莱新酒</a>
+						<a href="">黑啤清仓</a>
+						<a href="">特色陈年老酒</a>
+					</p>
+				</div>
+				<div class="shopcar l" id="shopcar">
+					<a href="../../../shop car/dist/html/shopcar.html" class="car">购物车</a>
+					<span id="carcount">0</span>
+					<div class="shopcar_list">
+						<ul></ul>
+						<p class="shopcar_list_p1 l">共<span>0</span>件商品<br>
+						总计：￥<span>0.0</span></p>
+						<a href="" class="seecar">查看购物车</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav>
+    	<div class="m">
+    		<ul class="nav_activity">
+    			<li class="l"><a href="../../../list/dist/html/list.html" class="index_mainBtn"><span></span>选酒中心</a><b></b>
+					<div class="index_list">
+						<div id="list_one">
+							<p>葡萄酒<span></span></p>
+							<ul class="nav_list">
+								<li class="l"><a href="">法国</a></li>
+								<li class="l"><a href="">西班牙</a></li>
+								<li class="l"><a href="">意大利</a></li>
+								<li class="l"><a href="">智利</a></li>
+								<li class="l"><a href="">干红</a></li>
+								<li class="l"><a href="">桃红</a></li>
+								<li class="l"><a href="">甜白</a></li>
+								<li class="l"><a href="">起泡</a></li>
+								<li class="l"><a href="">香槟</a></li>
+								<li class="l"><a href="">加强葡萄酒</a></li>
+								<li class="l"><a href="">列级名庄</a></li>
+								<li class="l"><a href="">中级庄</a></li>
+							</ul>					
+						</div>
+						<div id="list_two">
+							<p>一键选酒<span class="two_hot"></span><span></span></p>
+							<ul class="nav_list">
+								<li class="l"><a href="">礼盒</a></li>
+								<li class="l"><a href="">餐酒精选</a></li>
+								<li class="l"><a href="">礼盒套装</a></li>
+								<li class="l"><a href="">权威高分酒</a></li>
+								<li class="l"><a href="">聚会婚庆整箱</a></li>
+								<li class="l"><a href="">精品闪购</a></li>
+								<li class="l"><a href="">海淘</a></li>
+								<li class="l"><a href="">陈酿老酒</a></li>
+							</ul>
+						</div>
+						<div id="list_thr">
+							<p>洋酒烈酒</span><span></span></p>
+							<ul class="nav_list">
+								<li class="l"><a href="">轩尼诗</a></li>
+								<li class="l"><a href="">威士忌</a></li>
+								<li class="l"><a href="">鸡尾酒</a></li>
+								<li class="l"><a href="">百利甜</a></li>
+								<li class="l"><a href="">干邑</a></li>
+								<li class="l"><a href="">白兰地</a></li>
+								<li class="l"><a href="">朗姆酒</a></li>
+								<li class="l"><a href="">伏加特</a></li>
+							</ul>
+						</div>
+						<div id="list_four">
+							<p>中国白酒</span><span></span></p>
+							<ul class="nav_list">
+								<li class="l"><a href="">茅台</a></li>
+								<li class="l"><a href="">五粮液</a></li>
+								<li class="l"><a href="">红花郎</a></li>
+								<li class="l"><a href="">洋河</a></li>
+							</ul>
+						</div>
+						<div id="list_five">
+							<p>酒具周边</span><span></span></p>
+							<ul class="nav_list">
+								<li class="l"><a href="">酒杯</a></li>
+								<li class="l"><a href="">酒柜</a></li>
+								<li class="l"><a href="">酒刀</a></li>
+								<li class="l"><a href="">醒酒器</a></li>
+								<li class="l"><a href="">礼盒</a></li>
+								<li class="l"><a href="">其他酒具</a></li>
+							</ul>
+						</div>
+						<div id="list_six">
+							<p>啤酒 黄酒 日韩酒</span><span></span></p>
+							<ul class="nav_list">
+								<li class="l"><a href="">进口啤酒</a></li>
+								<li class="l"><a href="">精酿黄酒</a></li>
+								<li class="l"><a href="">钜惠抢购</a></li>
+								<li class="l"><a href="">绍兴黄酒</a></li>
+								<li class="l"><a href="">清酒</a></li>
+								<li class="l"><a href="">梅酒</a></li>
+								<li class="l"><a href="">烧酒</a></li>
+							</ul>
+						</div>
+					</div>
+    			</li>
+    			<li class="l"><a href="">首页</a></li>
+    			<li class="l"><a href="">超值抢购</a></li>
+    			<li class="l"><a href="">精品闪购</a></li>
+    			<li class="l"><a href="">名庄特卖</a></li>
+    			<li class="l"><a href="">非常大牌</a></li>
+    			<li class="l"><a href="">香港免税</a></li>
+    			<li class="l"><a href="">清仓特卖<span></span></a></li>
+    			<li class="l"><a href="">老酒馆<span></span></a></li>
+    			<li class="l"><a href="">全球海淘</a></li>
+    		</ul>
+    	</div>
+    </nav>
+    <div class="area1"></div>
+    <div class="area2"></div>
+    <div class="area3">
+    	<a href=""><img src="https://img02.yesmyimg.com/slides/daxing/201801/0112028prod01.jpg"></a>
+    </div>
+    <div class="area4">
+    	<a href=""><img src="https://img02.yesmyimg.com/slides/jammy/0112028/0112028prod04.jpg"></a>
+    </div>
+    <div class="area5">
+    	<ul id="act_list">
+    		<li class="l">
+    			<a href=""><img src="https://img19.yesmyimg.com/n/571/232/6232571/0342521_220x360.png" alt=""></a>
+    			<p>百年张裕，品质保证</p>
+    			<p>张裕珍藏级解百纳干红</p>
+    			<span>￥208</span>
+    			<a href="">立即购买</a>
+    		</li>
+    		<li class="l">
+    			<a href=""><img src="https://img19.yesmyimg.com/n/571/232/6232571/0342521_220x360.png" alt=""></a>
+    			<p>百年张裕，品质保证</p>
+    			<p>张裕珍藏级解百纳干红</p>
+    			<span>￥208</span>
+    			<a href="">立即购买</a>
+    		</li>
+    		<li class="l">
+    			<a href=""><img src="https://img19.yesmyimg.com/n/571/232/6232571/0342521_220x360.png" alt=""></a>
+    			<p>百年张裕，品质保证</p>
+    			<p>张裕珍藏级解百纳干红</p>
+    			<span>￥208</span>
+    			<a href="">立即购买</a>
+    		</li>
+    		<li class="l">
+    			<a href=""><img src="https://img19.yesmyimg.com/n/571/232/6232571/0342521_220x360.png" alt=""></a>
+    			<p>百年张裕，品质保证</p>
+    			<p>张裕珍藏级解百纳干红</p>
+    			<span>￥208</span>
+    			<a href="">立即购买</a>
+    		</li>
+    		<li class="l">
+    			<a href=""><img src="https://img19.yesmyimg.com/n/571/232/6232571/0342521_220x360.png" alt=""></a>
+    			<p>百年张裕，品质保证</p>
+    			<p>张裕珍藏级解百纳干红</p>
+    			<span>￥208</span>
+    			<a href="">立即购买</a>
+    		</li>
+    		<li class="l">
+    			<a href=""><img src="https://img19.yesmyimg.com/n/571/232/6232571/0342521_220x360.png" alt=""></a>
+    			<p>百年张裕，品质保证</p>
+    			<p>张裕珍藏级解百纳干红</p>
+    			<span>￥208</span>
+    			<a href="">立即购买</a>
+    		</li>
+    	</ul>
+    </div>
+    <footer>
+	<div class="w">
+		<div class="footer_top">
+			<div class="foot_col1">
+				<h2>也买酒承诺</h2>
+				<a href="" class="zp">
+					<h3>正品保障</h3>
+				</a>
+				<a href="" class="th">
+					<h3>30天退换货</h3>
+				</a>
+				<a href="" class="hw">
+					<h3>恒温恒湿仓</h3>
+				</a>
+				<a href="" class="free">
+					<h3>免运费</h3>
+					<span>满99元包邮（江浙沪、北京、广州 等一区城市）</span>
+				</a>
+				<a href="" class="mf">
+					<h3>慢就反</h3>
+				</a>
+			</div>
+			<div class="foot_col2">
+				<ul>
+					<li>
+						<h3>购物指南</h3>
+						<p>
+							<a href="">帐户注册</a>
+							<a href="">购物流程</a>
+							<a href="">积分制度</a>
+							<a href="">礼品卡</a>
+							<a href="">会员权益</a>
+							<a href="">常见问题</a>
+						</p>
+					</li>
+					<li>
+						<h3>支付帮助</h3>
+						<p>
+							<a href="">货到付款</a>
+							<a href="">在线支付</a>
+							<a href="">银行转账</a>
+							<a href="">发票制度</a>
+						</p>
+					</li>
+					<li>
+						<h3>专业特色</h3>
+						<p>
+							<a href="">存酒库</a>
+							<a href="">酒类交易中心</a>
+							<a href="">全国门店分布</a>
+							<a href="">香港免税</a>
+							<a href="">期酒交易</a>
+						</p>
+					</li>
+					<li>
+						<h3>物流配送</h3>
+						<p>
+							<a href="">99元免运费</a>
+							<a href="">配送范围</a>
+							<a href="">慢就反</a>
+						</p>
+					</li>
+					<li>
+						<h3>关于我们</h3>
+						<p>
+							<a href="">关于也买酒</a>
+							<a href="">联系我们</a>
+							<a href="">媒体聚焦</a>
+							<a href="">隐私声明</a>
+							<a href="">4008208060</a>
+						</p>
+					</li>
+					<li>
+						<h3>招商合作</h3>
+						<p>
+							<a href="">经销商招募</a>
+							<a href="">连锁店招募</a>
+							<a href="">积分制度</a>
+							<a href="">也买联盟</a>
+							<a href="">企业采购</a>
+						</p>
+					</li>
+					<li>
+						<h3>也买酒APP下载</h3>
+						<p>
+							<span>下载也买酒APP</span>
+							<span>每月18手机购酒节精彩不错过</span>
+						</p>
+						<h3>也买酒官方微信</h3>
+						<p>
+							<span>关注微信、劲爆优惠触手可得！</span>
+						</p>
+						<h3 class="letter"></h3>
+					</li>
+				</ul>
+			</div>
+			<div class="foot_col3">
+				<div>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<p>新浪微博</p>
+					<a href="">立即关注</a>
+					<p>也买网官方微博</p>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="foot_bottom">
+			<div class="foot_nav">
+				<a href="">关于也买酒</a>
+				<span class="sep">|</span>
+				<a href="">联系我们</a>
+				<span class="sep">|</span>
+				<a href="">媒体聚焦</a>
+				<span class="sep">|</span>
+				<a href="">诚招英才</a>
+				<span class="sep">|</span>
+				<a href="">隐私声明</a>
+			</div>
+			<div class="foot_links">
+				<p>友情链接：
+					<a href=""> 邛酒电子商务网</a>
+					<a href=""> 123美食网</a>
+					<a href=""> 重庆婚庆</a>
+					<a href=""> 烧酒网</a>
+					<a href=""> 57团购网</a>
+					<a href=""> 中国糖酒网</a>
+					<a href=""> 中国品牌网</a>
+					<a href=""> 搜狐焦点烟台站</a>
+					<a href=""> 酒吧地图网</a>
+					<a href=""> 格子网</a>
+					<a href=""> 切它网B2B</a>
+					<a href=""> 杂志迷</a>
+					<a href=""> 上海19楼</a>
+					<span></span>
+					<a href="" class="none"> 鸿运起名网</a>
+					<a href="" class="none"> 美酒招商网</a>
+					<a href="" class="none"> 白酒招商</a>
+				</p>
+			</div>
+			<div class="foot-license"> 
+				<span class="top100">消费者最喜爱的网站TOP100</span> 
+				<span class="sep">|</span> 
+				<span class="year18">仅限18周岁以上人士购买</span> 
+				<span class="sep">|</span> 
+				<a target="_blank" href="http://www.zx110.org/" style="color:#999999;" rel="nofollow">
+				<span class="shzxw">网络社会征信网</span></a> 
+				<span class="sep">|</span> 
+				<span class="shgs">上海工商</span> 
+				<span class="sep">|</span> 
+				<span>京公网安备11010502013828</span> 
+			</div>
+			<div class="foot-copyright">
+				Copyright 2006-2015 也买酒 yesmywine.com 版权所有 
+				<span class="sep">|</span> 
+				<a href="" style="color:#999">沪ICP备17040012号-1</a> 
+				<br> 
+				<div class="cx">
+					<span class="l"><a href=""><img src="https://img3.yesmyimg.com/images/event/2017/cert.png?"></a></span> 
+					<span class="l" style="margin-left:10px;display:inline"><a href=""><img src="https://img14.yesmyimg.com/images/event/2015/12/jiujiao.jpg" style="opacity: 1;" height="40" width="112" alt="沪公网备"></a></span> 
+					<span class="l" style="margin-left:10px;display:inline;margin-top: 10px;"> <a href="http://shwg.dianping.com/"> <img src="https://img14.yesmyimg.com/images/event/2017/link.jpeg" style="opacity: 1;" height="120" width="112" alt="网购大家评"> </a> </span> 
+				</div> 
+			</div>
+		</div>
+	</div>
+</footer>
+<div id="rightBox">
+	<a href="#area1"></a>
+	<a href="#area2"></a>
+	<a href="#area3"></a>
+	<a href="#area4"></a>
+	<a href="#area5"></a>
+	<a href="#" style="margin-top: 30px;"></a>
+</div>
+
+    <script type="text/javascript" src="../js/all.js"></script>
+</body>
+</html>

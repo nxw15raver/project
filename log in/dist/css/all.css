@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*================================reset=================================*/
+body, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, ol, dl, dd, dt, figure, figcaption,
+input, form, fieldset, legend {
+  margin: 0px;
+  padding: 0px;
+  border: 0; }
+
+fieldset, img {
+  display: block;
+  border: 0px; }
+
+input {
+  outline: none; }
+
+ul, ol {
+  list-style: none; }
+
+body {
+  font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+  background: #fff; }
+
+a {
+  color: #85726c;
+  text-decoration: none; }
+
+a:hover {
+  color: #c53f4c; }
+
+header, footer, main, nav, section, aside, article, figure, figcaption {
+  display: block; }
+
+/*===============================公共样式============================*/
+.w {
+  width: 1200px;
+  margin: 0 auto; }
+
+.l {
+  float: left; }
+
+.r {
+  float: right; }
+
+header {
+  border-bottom: 2px solid #BC0E31; }
+  header div.w {
+    padding: 20px 0;
+    overflow: hidden; }
+
+div#logMain div.w {
+  padding: 30px 0;
+  overflow: hidden; }
+  div#logMain div.w div.leftAds {
+    width: 770px;
+    text-align: center; }
+    div#logMain div.w div.leftAds img {
+      display: inline; }
+  div#logMain div.w div.rightIpt {
+    border: 1px solid #ccc;
+    overflow: hidden;
+    padding: 20px 50px 20px 20px; }
+    div#logMain div.w div.rightIpt div.iptHead {
+      margin-bottom: 20px; }
+    div#logMain div.w div.rightIpt div#iptBox div.boxTop {
+      border-bottom: 1px dashed #ccc;
+      position: relative; }
+      div#logMain div.w div.rightIpt div#iptBox div.boxTop input {
+        margin-bottom: 15px; }
+      div#logMain div.w div.rightIpt div#iptBox div.boxTop input:first-child, div#logMain div.w div.rightIpt div#iptBox div.boxTop input:nth-child(3) {
+        border: 1px solid #999;
+        padding: 8px 0 8px 10px;
+        height: 20px;
+        line-height: 20px;
+        color: #aaa;
+        width: 300px;
+        font-size: 14px; }
+      div#logMain div.w div.rightIpt div#iptBox div.boxTop input:nth-child(5) {
+        position: absolute;
+        top: 110px; }
+      div#logMain div.w div.rightIpt div#iptBox div.boxTop span {
+        display: inline-block;
+        margin-left: 20px;
+        margin-bottom: 15px; }
+      div#logMain div.w div.rightIpt div#iptBox div.boxTop button {
+        background: url(https://css.yesmyimg.com/web/20160613/newWeb/css/member/images/btn_login.gif);
+        border: none;
+        width: 313px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 10px; }
+      div#logMain div.w div.rightIpt div#iptBox div.boxTop a {
+        color: #3472B2;
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 15px; }
+    div#logMain div.w div.rightIpt div#iptBox div.boxDown p {
+      margin-top: 10px; }
+    div#logMain div.w div.rightIpt div#iptBox div.boxDown a {
+      background: url(https://css.yesmyimg.com/web/20160613/newWeb/css/member/images/icons.png) no-repeat;
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      width: 48px;
+      height: 48px; }
+    div#logMain div.w div.rightIpt div#iptBox div.boxDown a:nth-child(2) {
+      background-position: -100px 0px; }
+    div#logMain div.w div.rightIpt div#iptBox div.boxDown a:nth-child(3) {
+      background-position: -50px 0px; }
+    div#logMain div.w div.rightIpt div#iptBox div.boxDown a:last-child {
+      background-position: -155px 0px; }
+
+footer {
+  border-top: 1px solid #ccc; }
+  footer div.w div.foot-license {
+    margin-top: 10px;
+    padding: 5px 0;
+    color: #999;
+    text-align: center;
+    line-height: 20px; }
+    footer div.w div.foot-license span {
+      background: url(https://css.yesmyimg.com/web/20160613/newWeb/css/v3/5135/images/bg_header2.png../image/bg_header2.png) no-repeat;
+      display: inline-block;
+      height: 20px;
+      background-position: 200px -140px; }
+    footer div.w div.foot-license span.sep {
+      font-family: "Arial";
+      margin: 0 5px; }
+    footer div.w div.foot-license span.top100 {
+      padding-left: 22px;
+      background-position: -180px -230px; }
+    footer div.w div.foot-license span.year18 {
+      padding-left: 22px;
+      background-position: -180px -250px; }
+    footer div.w div.foot-license span.shzxw {
+      padding-left: 22px;
+      background-position: -180px -270px; }
+    footer div.w div.foot-license span.shgs {
+      padding-left: 22px;
+      background-position: -180px -290px; }
+  footer div.w div.foot-copyright {
+    color: #999;
+    text-align: center;
+    line-height: 30px; }
+    footer div.w div.foot-copyright::after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    footer div.w div.foot-copyright span.sep {
+      font-family: Arial;
+      margin: 0 5px; }
+    footer div.w div.foot-copyright div.cx {
+      overflow: hidden;
+      margin: 0 auto;
+      width: 356px; }
